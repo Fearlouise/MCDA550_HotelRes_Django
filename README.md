@@ -23,22 +23,24 @@ This project was developed as part of **MCDA5550**, demonstrating how to build a
     python -m venv venv
 
     # Activate the environment:
-
     # On macOS/Linux:
-    - source venv/bin/activate
+    source venv/bin/activate
 
     # On Windows:
-    - venv\Scripts\activate
+    venv\Scripts\activate
 
 4. **Install Dependencies:**
-    - pip install -r requirements.txt
+    ```bash
+    pip install -r requirements.txt
 
 5. **Run migrations to create the database:**
-    - python manage.py makemigrations
-    - python manage.py migrate
+    ```bash
+    python manage.py makemigrations
+    python manage.py migrate
 
 6.  **Start the Django development server:**
-    - python manage.py runserver
+    ```bash
+    python manage.py runserver
 
 7. **Open http://localhost:8000/api/hotels/ to access the API.**
 
@@ -47,7 +49,8 @@ This project was developed as part of **MCDA5550**, demonstrating how to build a
         - Open http://localhost:8000/api/hotels/ in your browser to:
             - View hotel data (GET)
             - Use built-in POST form to add new hotels in JSON format:
-                - {
+                ```bash
+                {
                     "hotel_name": "Hilton Garden Inn",
                     "street_number": "123",
                     "street_name": "Main St",
@@ -65,9 +68,9 @@ This project was developed as part of **MCDA5550**, demonstrating how to build a
         - View and test API responses manually
 
 9. **Closing the Django development server**
-    - To shut down the Django server, press:
-    - CTRL + C 
-    - in the terminal where it's running
+    # To shut down the Django server, press:
+    ```bash
+    CTRL + C # In the terminal where it's running
 
 10. **Future Improvements**
     - Add PUT & DELETE functionality
