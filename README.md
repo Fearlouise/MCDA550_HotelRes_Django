@@ -19,10 +19,14 @@ This project was developed as part of **MCDA5550**, demonstrating how to build a
    cd MCDA550_HotelRes_Django
 
 3. **Create and activate a virtual environment:**
-    - python -m venv venv
+    ```bash
+    python -m venv venv
+
     # Activate the environment:
+
     # On macOS/Linux:
     - source venv/bin/activate
+
     # On Windows:
     - venv\Scripts\activate
 
